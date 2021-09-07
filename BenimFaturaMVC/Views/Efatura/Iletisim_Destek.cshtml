@@ -1,0 +1,111 @@
+﻿
+@{
+    ViewBag.Title = "Iletisim_Destek";
+    Layout = "~/Views/Shread/_Layout.cshtml";
+}
+
+<section id="contact" class="contact">
+    <div class="container" >
+
+        <div class="section-title">
+            <!--  <h2>İLETİŞİM</h2>-->
+            <!-- <p>İletişim bilgilerinizi doldurun biz size ulaşalım.</p>
+        -->
+
+            <div class="text-center" style="margin-top:10px; margin-bottom:20px;"><h2 style="color: #5C9F24">DESTEK TALEP FORMU</h2></div><br>
+            <p style="font-weight: 600;margin-right:10px">
+                <i class="bi bi-telephone-fill" alt="Benim fatura efatura destek" aria-hidden="true" style="font-size: 30px; color: #5C9F24">
+                </i>&nbsp;&nbsp;<span style="font-size: 20px;">Destek için iletişim hattımız:</span><br>
+                <a href="tel:+908506110645" style="font-size: 30px; color: #5C9F24">+90 850 611 06 45</a>
+                <br><br><span style="font-size: 15px">
+                    Efatura sistemi hakkında her türlü bilgi, destek ve önerilerinizi form ile bize gönderebilirsiniz.
+                    <br>Operatörlerimiz en kısa zamanda sizinle iletişime geçecektir.
+                </span>
+            </p>
+
+        </div>
+        
+
+        @model BenimFaturaMVC.Models.Email
+        <center>
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form col-lg-9">
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <input type="text" name="ad" class="form-control" id="ad" style="color:#5786b4;border:2px solid #ced4da;" placeholder="Adınız Soyadınız:" data-rule="" data-msg="Lütfen Boş Bırakmayınız.">
+                    </div>
+                    <div class="col-md-6 form-group mt-3 mt-md-0">
+                        <input type="email" class="form-control" name="email" id="email" style="color:#5786b4;border:2px solid #ced4da;" placeholder="E-Mail Adresiniz:" data-rule="email" data-msg="Lütfen Boş Bırakmayınız.">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <input type="text" name="telefon" class="form-control" id="telefon" style="color:#5786b4;border:2px solid #ced4da;" placeholder="Telefon:" data-rule="minlen:4" data-msg="Lütfen Boş Bırakmayınız.">
+                    </div>
+                    <div class="col-md-6 form-group mt-3 mt-md-0">
+                        <input type="text" class="form-control" name="konu" id="konu" style="color:#5786b4;border:2px solid #ced4da;" placeholder="Konu:" data-rule="text" data-msg="Lütfen Boş Bırakmayınız.">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-12 form-group mt-3 mt-md-0">
+                        <textarea id="mesaj" class="form-control" name="mesaj" rows="3" cols="50" style="color:#5786b4;border:2px solid #ced4da;" placeholder="İstek / Öneri" data-msg="Lütfen Boş Bırakmayınız."></textarea>
+
+                    </div>
+                </div>
+
+                <div class="text-center" style="margin-top:30px"><button type="button" class="btn btn-success" style="background-color: #5C9F24">Gönder</button></div>
+            </form>
+            </center>
+        <div class="row contact-info">
+
+            <div>
+                <iframe style="border:0; border-radius:20px; width : 70%; height: 270px;"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.6607539622664!2d31.170095215410804!3d40.90125597931179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x409d7558c6d29949%3A0x332d4e256b968190!2sBilsoft!5e0!3m2!1str!2str!4v1621845589546!5m2!1str!2str"
+                        frameborder="0" allowfullscreen=allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+
+       
+
+
+    </div>
+</section><!-- End Contact Section -->
+@section DestekScript{
+    <script>
+        $("form button.btn").on("click", function () {
+
+            let mail = {
+                "ad": $("input#ad").val(),
+                "email": $("input#email").val(),
+                "telefon": $("input#telefon").val(),
+                "konu": $("input#konu").val(),
+                "mesaj": $("textarea#mesaj").val(),
+            };
+
+            toastr.success("Mailiniz başarıyla gönderdiniz.")
+            $.ajax({
+                url: "@Url.Action("index","Efatura")",
+                type: "post",
+                dataType: "JSON",
+                data: mail,
+                success: function (res) {
+                    console.log(res)
+                    if (res.IsSuccess) {
+                       
+                    } else { }
+                    for (var i = 0; i < 4; i++) {
+                        $("form")[i].reset()
+                    }
+                },
+                error: function () {
+
+                }
+            });
+
+            return false;
+        })
+    </script>
+}

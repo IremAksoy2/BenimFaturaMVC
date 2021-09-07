@@ -1,0 +1,890 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shread/_Layout.cshtml";
+}
+
+<section id="hero">
+    <div class="hero-container">
+        <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+            <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+            <div class="carousel-inner" role="listbox">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active" style="background-size: cover">
+
+
+                        <div class="carousel-content">
+
+                            <div class="row">
+                                <div class="left-text col-lg-6 col-md-12 col-sm-12 col-xs-12" data-scroll-reveal="enter left move 30px over 0.1s after 0.4s">
+
+
+                                    @*<h2 class="animate__animated animate__fadeInDown">E-FATURA</h2>*@
+                                    @*<p class="animate__animated animate__fadeInUp">E-Fatura ücretsiz programı herhangi bir kısıtlama olmaksızın ömür boyu kullanabileceğiniz bir bedava elektronik faturalama programıdır. Basit arayüzü sayesinde kolay kullanılabilir, çok fazla işlem karmaşası gerektirmeyen, barkod desteği ile sadece müşteri, stok ve satış işlemlerini yapabileceğiniz, yaptığınız işlemlerin detaylı raporunu alabileceğiniz bir programdır.</p>*@
+
+                                    
+                                    <!--<div>
+                <a href="~/setup/benimfatura.msi" class="btn-get-started animate__animated animate__fadeInUp scrollto">ŞİMDİ ÜCRETSİZ KULLAN!</a>
+            </div> -->
+                                </div>
+
+                            </div>
+                        </div>
+                </div>
+                <!-- Slide 2 -->
+                <!-- <div class="carousel-item" style="background: url('/Content/img/slide/banner2 (2).jpg');background-size:cover;">
+          <div class="carousel-container">
+
+              <div class="carousel-content">
+      @*<h2 class="animate__animated animate__fadeInDown">Tamamen Ücretsiz ve Hızlı Kurulum</h2>*@
+      @*<p class="animate__animated animate__fadeInUp">Anlaşılır kolay kullanılan barkod desteği ile müşteri, stok satış ve fatura işlemlerini yapabileceğiniz, yaptığınız işlemlerin detaylı raporunu alabileceğiniz program mı arıyorsunuz? Tek yapmanız gereken programı indirmek!</p>*@
+
+              </div>
+          </div>
+      </div> -->
+                <!-- Slide 3 -->
+                <!--<div class="carousel-item" style="background: url(/Content/img/slide/Untit.jpg);background-size:cover;">
+        <div class="carousel-container">
+
+            <div class="carousel-content">-->
+                @*<h2 class="animate__animated animate__fadeInDown">E-Fatura ile Artık Her Şey Daha Kolay</h2>*@
+                @*<p class="animate__animated animate__fadeInUp">Hiçbir ücret, kurulum ya da personel eğitimine gerek duymadan anında E-Fatura dünyasının avantajlarıyla tanışın. Ön muhasebe işlemlerinizi sadeleştirin, kolaylaştırın ve hızlandırın.</p>*@
+                <!--<div>
+
+                    <a href="~/setup/benimfatura.msi" class="btn-get-started animate__animated animate__fadeInUp scrollto">ŞİMDİ ÜCRETSİZ İNDİR!</a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>-->
+
+            </div>
+
+
+
+            @*<a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+                </a>
+
+                <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+                </a>*@
+         
+       
+    </div>
+
+</div>
+
+</section><!-- End Hero -->
+
+<section id="sec-1" style="margin-right:15px;">
+    <div class="container">
+
+        <a href="/Efatura/Index#about">
+           <!-- <div class="scroll-down"></div> -->
+        </a>
+    </div>
+</section>
+
+
+<main id="main">
+
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+        <div class="container">
+
+            <div class="row no-gutters">
+                <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start">
+                    <div class="video-title" style="border-radius: 15px;">
+                        <video src="~/Content/img/f-HD720p.mov" width="100%" height="100%" alt="Efatura ve Earşiv Hizmeti" controls=controls autoplay=autoplay playsinline=playsinline muted=muted style="pointer-events:auto;border-radius: 15px;" loop=loop></video>
+                    </div>
+
+                </div>
+
+                <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
+
+                    <div class="content d-flex flex-column justify-content-center">
+                        @*<div class="section-title">
+                                <h2>E-FATURA İLE</h2>
+                            </div>*@
+                        <div class="row">
+                            <div class="section-title">
+                                <h2>E-FATURA İLE</h2>
+
+                            </div>
+                            <div class="col-md-6 icon-box">
+                                <i class="bx bx-time" alt="Efatura ücretsiz maliyet"></i>
+                                <h4>Zamandan ve Maliyetten Tasarruf Edin</h4>
+                                <!--
+                                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                                -->
+                            </div>
+                            <div class="col-md-6 icon-box">
+                                <i class="bx bx-cube-alt" alt="Efatura anında kurulum"></i>
+                                <h4>Hızlı Kurulumun Keyfini Çıkarın</h4>
+                                <!--
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                                -->
+                            </div>
+                            <div class="col-md-6 icon-box">
+                                <i class="bx bx-message" alt="Email ve SMS hızlı Efatura gönderme"></i>
+                                <h4>E-Mail ve SMS ile Anında Gönderim Sağlayın</h4>
+                                <!--
+                                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                                -->
+                            </div>
+                            <div class="col-md-6 icon-box">
+                                <i class="bx bx-shield" alt="En güvenli efatura hizmeti"></i>
+                                <h4>Bilgileriniz Güvende Kalsın</h4>
+                                <!--
+                                <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+                                -->
+                            </div>
+                        </div>
+                    </div><!-- End .content-->
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End About Section -->
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>E-FATURA ÖZELLİKLERİ</h2>
+                <!--
+                   <p>e-Fatura ücretsiz programı herhangi bir kısıtlama olmaksızın ömür boyu kullanabileceğiniz bir bedava elektronik faturalama programıdır. Basit arayüzü sayesinde kolay kullanılabilir, çok fazla işlem karmaşası gerektirmeyen, barkod desteği ile sadece müşteri, stok ve satış işlemlerini yapabileceğiniz, yaptığınız işlemlerin detaylı raporunu alabileceğiniz bir programdır.</p>
+                -->
+            </div>
+
+
+            <div class="row" >
+                <div class="col-lg-4 col-md-6 icon-box" >
+                    <div class="icon"><a href="#exampleModal"><i class="bi bi-person-fill" alt="Cari Kart Modülü Efatura" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></a></div>
+                    <h4 class="title"><a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal">Cari Kart Modülü</a></h4>
+                    <!-- Modal -->
+                    <div class="modal hide" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <div class="modal-body">
+                                    <div class="column" id="main" style="text-align:left; font-family:'Poppins'; color:black">
+
+                                        <h5 class="modal-title" id="exampleModalLabel" style="color:#5c9f24"><i class="bi bi-person-fill" alt="Cari Kart Modülü Efatura" data-bs-toggle="modal" data-bs-target="#exampleModal"></i> Cari Kart Modülü</h5><br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span> <span>Cari Hesap kartı tanımlama</span>
+                                        <br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span><span >Grup tanımlama</span> 
+                                        <br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span><span>Cariye Stoklu-Stoksuz Satış</span> 
+                                        <br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span><span>Cariye Kasa'dan ödeme ve tahsilat Yapabilme</span> 
+                                        <br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span><span>Cariyi borçlandırma ve alacaklandırma işlemleri</span> 
+                                        <br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span><span>Tahsilat ve ödeme makbuzu kesme</span> 
+                                        <br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span><span>Cari Hesap ekstresi</span> 
+
+                                        <br /><br />
+                                        <center>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color:#5c9f24">Kapat</button>
+                                        </center>
+
+                                    </div>
+                                    <div>
+                                        <?xml version="1.0" encoding="UTF-8" ?>
+                                        <svg width="67px" height="578px" viewBox="0 0 67 578" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <path d="M11.3847656,-5.68434189e-14 C-7.44726562,36.7213542 5.14322917,126.757812 49.15625,270.109375 C70.9827986,341.199016 54.8877465,443.829224 0.87109375,578 L67,578 L67,-5.68434189e-14 L11.3847656,-5.68434189e-14 Z" id="Path" fill="#5c9f24"></path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="column" id="secondary">
+                                        <div class="sec-content">
+                                            <h1 style="font-family:'Poppins'">BENİM FATURA</h1><br />
+                                            <h3 style="font-family:'Poppins'">Tamamen Ücretsiz<br /> ve <br />Hızlı Kurulum</h3><br />
+                                            <div>
+                                                <a class="getstarted scrollto" style="color:#5c9f24;font-weight:bold;background-color:white;padding:15px;border-radius:5px; font-family:'Poppins'" href="/setup/benimfatura.msi">Hemen İndir</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>-->
+                </div>
+                <div class="col-lg-4 col-md-6 icon-box">
+                    <div class="icon"><a href="#exampleModal2"><i class="bi bi-upc-scan" alt="Stok Takibi Modülü Efatura" data-bs-toggle="modal" data-bs-target="#exampleModal2"></i></a></div>
+                    <h4 class="title"><a href="#exampleModal2" data-bs-toggle="modal" data-bs-target="#exampleModal2">Stok Takibi Modülü</a></h4>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <div class="modal-body" style="font-family: 'Poppins'">
+                                    <div class="column" id="main" style="text-align:left; color:black">
+
+                                        <h5 class="modal-title" id="exampleModalLabel" style="color:#5c9f24"></i><i class="bi bi-upc-scan" alt="Stok Takibi Modülü Efatura" data-bs-toggle="modal" data-bs-target="#exampleModal"></i> Stok Takibi Modülü</h5><br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span> Stok Takibi Modülü
+                                        <br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span> Sınısız Depo Tanımlama
+                                        <br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span> Sınırsız Stok Kartı Tanımlama
+                                        <br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span> Barkodsuz Ürünler için Otomatik Barkod Tanımlama
+                                        <br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span> Stok Grubu ve Birimi Tanımlama
+                                        <br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span> Stok Kartlarına Resim Yükleme
+                                        <br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span> Depo Hareketleri Raporunu Alabilme
+                                        <br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span> Depolar Arası Virman
+                                        <br /><br />
+                                        <center>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"  style="background-color:#5c9f24; font-family:'Poppins'">Kapat</button>
+                                        </center>
+
+                                    </div>
+                                    <div>
+                                        <?xml version="1.0" encoding="UTF-8" ?>
+                                        <svg width="67px" height="578px" viewBox="0 0 67 578" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <path d="M11.3847656,-5.68434189e-14 C-7.44726562,36.7213542 5.14322917,126.757812 49.15625,270.109375 C70.9827986,341.199016 54.8877465,443.829224 0.87109375,578 L67,578 L67,-5.68434189e-14 L11.3847656,-5.68434189e-14 Z" id="Path" fill="#5c9f24"></path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="column" id="secondary">
+                                        <div class="sec-content">
+                                            <h1 style="font-family:'Poppins'">BENİM FATURA</h1><br />
+                                            <h3 style="font-family:'Poppins'">Tamamen Ücretsiz<br /> ve <br />Hızlı Kurulum</h3><br />
+                                            <div>
+                                                <a class="getstarted scrollto" style="color:#5c9f24;font-weight:bold;background-color:white;padding:15px;border-radius:5px" href="/setup/benimfatura.msi">Hemen İndir</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>-->
+                </div>
+                <div class="col-lg-4 col-md-6 icon-box">
+                    <div class="icon"><a href="#exampleModal3"><i class="bi bi-bar-chart-line-fill" alt="Raporlama Sistemi Efatura" data-bs-toggle="modal" data-bs-target="#exampleModal3"></i></a></div>
+                    <h4 class="title"><a href="#exampleModal3" data-bs-toggle="modal" data-bs-target="#exampleModal3">Raporlama Sistemi</a></h4>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <div class="modal-body" style="font-family: 'Poppins'">
+                                    <div class="column" id="main" style="text-align:left; color:black">
+
+                                        <h5 class="modal-title" id="exampleModalLabel" style="color:#5c9f24"></i><i class="bi bi-bar-chart-line-fill" alt="Raporlama Sistemi Efatura" data-bs-toggle="modal" data-bs-target="#exampleModal"></i> Raporlama Sistemi</h5><br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span> Cari Kartlara Ait Hesap ekstresi
+                                        <br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span> Toplu Cari Raporu vb.
+                                        <br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span> Stok Depo Hareketleri
+                                        <br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span> Stok Listeleri Raporu vb.
+                                        <br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span> Satış Raporu ve Satış Grafiği
+                                        <br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span> Kasa Hareketleri Raporu
+                                        <br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span> Banka Hareketleri Raporu
+                                        <br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span> Çek/Senet Raporu
+                                        <br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span> Kar-Zarar Analizi
+                                        <br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span> Gün Sonu Raporu
+
+                                        <br /><br />
+                                        <center>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color:#5c9f24">Kapat</button>
+                                        </center>
+
+                                    </div>
+                                    <div>
+                                        <?xml version="1.0" encoding="UTF-8" ?>
+                                        <svg width="67px" height="578px" viewBox="0 0 67 578" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <path d="M11.3847656,-5.68434189e-14 C-7.44726562,36.7213542 5.14322917,126.757812 49.15625,270.109375 C70.9827986,341.199016 54.8877465,443.829224 0.87109375,578 L67,578 L67,-5.68434189e-14 L11.3847656,-5.68434189e-14 Z" id="Path" fill="#5c9f24"></path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="column" id="secondary">
+                                        <div class="sec-content">
+                                            <h1 style="font-family:'Poppins'">BENİM FATURA</h1><br />
+                                            <h3 style="font-family:'Poppins'">Tamamen Ücretsiz<br /> ve <br />Hızlı Kurulum</h3><br />
+                                            <div>
+                                                <a class="getstarted scrollto" style="color:#5c9f24;font-weight:bold;background-color:white;padding:15px;border-radius:5px" href="/setup/benimfatura.msi">Hemen İndir</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>-->
+                </div>
+                <div class="col-lg-4 col-md-6 icon-box">
+                    <div class="icon"><a href="#exampleModal4"><i class="bi bi-receipt-cutoff" alt="Fatura Modülü Efatura" data-bs-toggle="modal" data-bs-target="#exampleModal4"></i></a></div>
+                    <h4 class="title"><a href="#exampleModal4" data-bs-toggle="modal" data-bs-target="#exampleModal4">Fatura Modülü</a></h4>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <div class="modal-body" style="font-family: 'Poppins'">
+                                    <div class="column" id="main" style="text-align:left; color:black">
+
+                                        <h5 class="modal-title" id="exampleModalLabel" style="color:#5c9f24"></i><i class="bi bi-printer-fill" alt="Fatura Modülü Efatura" data-bs-toggle="modal" data-bs-target="#exampleModal"></i> Fatura Modülü</h5><br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span> Alış, Satış ve İade Faturası Düzenleme
+                                        <br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span> Hızlı Parekende Satışı Yapabilme
+                                        <br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span> Cariye Stoklu-Stoksuz Satış
+                                        <br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span> Standart ve Gramajlı Ürün Barkod Desteği
+                                        <br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span> İrsaliyeyi Fatura Dönüştürme
+                                        <br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span> Fatura Makbuz Basımı
+                                        <br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span> Detaylı Alış, Satış ve İade Faturası Raporlama
+
+                                        <br /><br />
+                                        <center>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color:#5c9f24">Kapat</button>
+                                        </center>
+
+                                    </div>
+                                    <div>
+                                        <?xml version="1.0" encoding="UTF-8" ?>
+                                        <svg width="67px" height="578px" viewBox="0 0 67 578" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <path d="M11.3847656,-5.68434189e-14 C-7.44726562,36.7213542 5.14322917,126.757812 49.15625,270.109375 C70.9827986,341.199016 54.8877465,443.829224 0.87109375,578 L67,578 L67,-5.68434189e-14 L11.3847656,-5.68434189e-14 Z" id="Path" fill="#5c9f24"></path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="column" id="secondary">
+                                        <div class="sec-content">
+                                            <h1 style="font-family:'Poppins'">BENİM FATURA</h1><br />
+                                            <h3 style="font-family:'Poppins'">Tamamen Ücretsiz<br /> ve <br />Hızlı Kurulum</h3><br />
+                                            <div>
+                                                <a class="getstarted scrollto" style="color:#5c9f24;font-weight:bold;background-color:white;padding:15px;border-radius:5px" href="/setup/benimfatura.msi">Hemen İndir</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>-->
+                </div>
+
+                <div class="col-lg-4 col-md-6 icon-box">
+                    <div class="icon"><a href="#exampleModal5"><i class="bi bi-list-task" alt="Taslak Hazırlama Efatura" data-bs-toggle="modal" data-bs-target="#exampleModal5"></i></a></div>
+                    <h4 class="title"><a href="#exampleModal5" data-bs-toggle="modal" data-bs-target="#exampleModal5">Taslak Hazırlama</a></h4>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <div class="modal-body" style="font-family: 'Poppins'">
+                                    <div class="column" id="main" style="text-align:left; color:black">
+
+                                        <h5 class="modal-title" id="exampleModalLabel" style="color:#5c9f24"></i><i class="bi bi-list-task" alt="Taslak Hazırlama Efatura" data-bs-toggle="modal" data-bs-target="#exampleModal"></i> Taslak Hazırlama</h5><br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span> Tıpkı mail'lerde olduğu gibi taslak olarak hazırlayabilirsiniz.
+
+
+
+                                        <br /><br />
+                                        <center>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color:#5c9f24">Kapat</button>
+                                        </center>
+
+                                    </div>
+                                    <div>
+                                        <?xml version="1.0" encoding="UTF-8" ?>
+                                        <svg width="67px" height="578px" viewBox="0 0 67 578" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <path d="M11.3847656,-5.68434189e-14 C-7.44726562,36.7213542 5.14322917,126.757812 49.15625,270.109375 C70.9827986,341.199016 54.8877465,443.829224 0.87109375,578 L67,578 L67,-5.68434189e-14 L11.3847656,-5.68434189e-14 Z" id="Path" fill="#5c9f24"></path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="column" id="secondary">
+                                        <div class="sec-content">
+                                            <h1 style="font-family:'Poppins'">BENİM FATURA</h1><br />
+                                            <h3 style="font-family:'Poppins'">Tamamen Ücretsiz<br /> ve <br />Hızlı Kurulum</h3><br />
+                                            <div>
+                                                <a class="getstarted scrollto" style="color:#5c9f24;font-weight:bold;background-color:white;padding:15px;border-radius:5px" href="/setup/benimfatura.msi">Hemen İndir</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>-->
+                </div>
+                <div class="col-lg-4 col-md-6 icon-box">
+                    <div class="icon"> <a href="#exampleModal6"> <i class="bi bi-archive-fill" alt="Arşivleme Efatura" data-bs-toggle="modal" data-bs-target="#exampleModal6"></i></a></div>
+                    <h4 class="title"><a href="#exampleModal6" data-bs-toggle="modal" data-bs-target="#exampleModal6">Arşivleme</a></h4>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <div class="modal-body" style="font-family: 'Poppins'">
+                                    <div class="column" id="main" style="text-align:left; color:black">
+
+                                        <h5 class="modal-title" id="exampleModalLabel" style="color:#5c9f24"></i><i class="bi bi-archive-fill" alt="Arşivleme Efatura" data-bs-toggle="modal" data-bs-target="#exampleModal"></i> Arşivleme</h5><br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span> Minimum 10 yıl boyunca güvenli bir şekilde arşivleyebilirsiniz.
+
+
+
+                                        <br /><br />
+                                        <center>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color:#5c9f24">Kapat</button>
+                                        </center>
+
+                                    </div>
+                                    <div>
+                                        <?xml version="1.0" encoding="UTF-8" ?>
+                                        <svg width="67px" height="578px" viewBox="0 0 67 578" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <path d="M11.3847656,-5.68434189e-14 C-7.44726562,36.7213542 5.14322917,126.757812 49.15625,270.109375 C70.9827986,341.199016 54.8877465,443.829224 0.87109375,578 L67,578 L67,-5.68434189e-14 L11.3847656,-5.68434189e-14 Z" id="Path" fill="#5c9f24"></path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="column" id="secondary">
+                                        <div class="sec-content">
+                                            <h1 style="font-family:'Poppins'">BENİM FATURA</h1><br />
+                                            <h3 style="font-family:'Poppins'">Tamamen Ücretsiz<br /> ve <br />Hızlı Kurulum</h3><br />
+                                            <div>
+                                                <a class="getstarted scrollto" style="color:#5c9f24;font-weight:bold;background-color:white;padding:15px;border-radius:5px" href="/setup/benimfatura.msi">Hemen İndir</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>-->
+                </div>
+                <div class="col-lg-12 col-md-12 icon-box">
+                    <div class="icon"><a href="#exampleModal8"><i class="bi bi-telegram" alt="Efatura Gönderme" data-bs-toggle="modal" data-bs-target="#exampleModal8"></i></a></div>
+                    <h4 class="title"><a href="#exampleModal8" data-bs-toggle="modal" data-bs-target="#exampleModal8">Gönderme</a></h4>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <div class="modal-body" style="font-family: 'Poppins'">
+                                    <div class="column" id="main" style="text-align:left; color:black">
+
+                                        <h5 class="modal-title" id="exampleModalLabel" style="color:#5c9f24"></i><i class="bi bi-telegram" alt="Efatura Gönderme" data-bs-toggle="modal" data-bs-target="#exampleModal"></i> Gönderme</h5><br />
+                                        <span style="color:#5c9f24"><i class="bi bi-caret-right-fill"></i></span> Fatura işlemlerinizi mail alma ve gönderme kolaylığında gerçekleştirebilirsiniz.
+
+
+
+                                        <br /><br />
+                                        <center>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color:#5c9f24">Kapat</button>
+                                        </center>
+
+                                    </div>
+                                    <div>
+                                        <?xml version="1.0" encoding="UTF-8" ?>
+                                        <svg width="67px" height="578px" viewBox="0 0 67 578" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <path d="M11.3847656,-5.68434189e-14 C-7.44726562,36.7213542 5.14322917,126.757812 49.15625,270.109375 C70.9827986,341.199016 54.8877465,443.829224 0.87109375,578 L67,578 L67,-5.68434189e-14 L11.3847656,-5.68434189e-14 Z" id="Path" fill="#5c9f24"></path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="column" id="secondary">
+                                        <div class="sec-content">
+                                            <h1 style="font-family:'Poppins'">BENİM FATURA</h1><br />
+                                            <h3 style="font-family:'Poppins'">Tamamen Ücretsiz<br /> ve <br />Hızlı Kurulum</h3><br />
+                                            <div>
+                                                <a class="getstarted scrollto" style="color:#5c9f24;font-weight:bold;background-color:white;padding:15px;border-radius:5px" href="/setup/benimfatura.msi">Hemen İndir</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>-->
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+    </section><!-- End Services Section -->
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients section-bg">
+        <div class="container">
+
+            <div class="row">
+
+            </div>
+
+        </div>
+    </section><!-- End Clients Section -->
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Neden E-Fatura?</h2>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-4">
+                    <div class="box" style="border-radius:15px">
+                        @*<span>01</span>*@
+                        <h4 style="text-align:center">Güvenli Veri Depolama</h4> 
+                        
+                        <h6 style="text-align:center"> Bulut Veri Depolama ve Bulut Yedekleme Çözümleri ile Hizmet Sunmaktayız.</h6>
+                        <p style="text-align:center"><img src="~/Content/img/Security.gif" width="50%" style="border-radius:15px" alt="efatura"/></p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div class="box" style="border-radius:15px">
+                        @*<span>01</span>*@
+                        <h4 style="text-align:center">Kullanıcı Dostu Arayüz</h4>
+                        <h6 style="text-align:center"> Rahat Tasarımı ve Ayırt Edici Özellikleriyle Kullanıcı Dostu Arayüz Sunmaktayız.</h6>
+                        <p style="text-align:center"><img src="~/Content/img/Personalset.gif" width="50%" style="border-radius:15px" alt="efatura" /></p>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div class="box" style="border-radius:15px">
+                        @*<span>01</span>*@
+                        <h4 style="text-align:center">Hızlı Teknik Destek</h4>
+                        <h6 style="text-align:center"> Alacağınız Numara ile Müşteri Hizmetlerimize Destek Talebinde Bulunabilirsiniz.</h6>
+                        <p style="text-align:center"><img src="~/Content/img/Contact.gif" width="50%" style="border-radius:15px" alt="efatura" /></p>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+        </div>
+    </section>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- End Pricing Section -->
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta" style="margin-top:-30px">
+        <div class="container" data-aos="zoom-in">
+
+            <div class="text-center">
+                <a class="cta-btn" alt="Efatura Programı Şimdi Ücretsiz İndir" href="~/setup/benimfatura.msi">ŞİMDİ ÜCRETSİZ İNDİR!</a>
+            </div>
+
+        </div>
+    </section><!-- End Cta Section -->
+    <br />
+    <br />
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Sıkça Sorulan Sorular</h2>
+            </div>
+
+            <div class="faq-list">
+                <ul>
+                    <li data-aos="fade-up">
+                        <i class="bx bx-help-circle icon-help" alt="Efatura programı"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">E-Fatura nedir? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                            <p>
+                                Dijital ortamda hazırlanan faturalara Elektronik Fatura (E-Fatura) denir. Kâğıda basılmayan ve internet üzerinden alıcı ve satıcıya iletilen e-fatura, ileride tüm firmalar için zorunlu hale getirilecektir.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li data-aos="fade-up" data-aos-delay="100">
+                        <i class="bx bx-help-circle icon-help" alt="Efatura ücretsiz indir"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">E-Faturayı neden kullanmalıyım? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                E-fatura kullanımında girilen faturalar anında dijital ortama kayıt edildiğinden müşteriler ve satıcılarla mutabakat yapmanız kolaylaşır. Fatura saklama iş yükü ve maliyetinden kurtulursunuz. Benimfatura aracılığıyla güvenli bir şekilde fatura gönderip alarak fatura bilgilerine sistem sorgusuyla anında erişerek faturaya ilişkin bilgilerin anında kontrolünü sağlayabilirsiniz.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li data-aos="fade-up" data-aos-delay="200">
+                        <i class="bx bx-help-circle icon-help" alt="Efatura fatura nasıl kesilir"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">
+                            Zorunluluk kapsamında değilim? Yine de e-fatura uygulamasına kendi isteğim ile dahil olabilir miyim?
+                            <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i>
+                        </a>
+                        <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                Evet. İsteğe bağlı olarak e-fatura uygulamasına dahil olmak mümkündür.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li data-aos="fade-up" data-aos-delay="300">
+                        <i class="bx bx-help-circle icon-help" alt="Efatura gib portalı"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">E-fatura uygulamasına nasıl dahil olabilirim? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                GİB’e e-fatura başvurunuzu yapıp, mali mührünüzü almanız gerekir.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li data-aos="fade-up" data-aos-delay="400">
+                        <i class="bx bx-help-circle icon-help" alt="Efatura masrafsız gönderme"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed"> E-faturanın çıktısını alıp yazdırmam gerekiyor mu? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                Hayır böyle bir zorunluluk yoktur. Müşterilerinize faturanızı elektronik ortamda iletirsiniz. Süreç tamamen dijital ortamda gerçekleşir.
+                            </p>
+                        </div>
+                    </li>
+
+
+                    <li data-aos="fade-up" data-aos-delay="400">
+                        <i class="bx bx-help-circle icon-help" alt="Efatura elektronik fatura hizmeti"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-6" class="collapsed"> E-fatura uygulamasına geçtikten sonra kâğıt fatura düzenleyemez miyim? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-6" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                E-fatura uygulamasına geçtikten sonra sisteme dahil olan firmalara e-fatura, dahil olmayan firmalara ise kağıt fatura göndermeniz gerekmektedir. Bu nedenle fatura alıcısının sisteme dahil olup olmadığının kontrolü fatura oluşturulmadan önce mükellef tarafından yapılmalıdır.
+                            </p>
+                        </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="400">
+                        <i class="bx bx-help-circle icon-help" alt="Efatura geçiş"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-7" class="collapsed"> Müşterilerimin e-fatura kullanıcısı olduklarını nasıl bilirim? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-7" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                Programın satış ekranında müşterinin vergi numarası yazıldığında, fatura alıcısının sisteme dahil olup olmadığını otomatik olarak kontrol etmektedir. Bir diğer kontrol edebileceğini yer ise E-Fatura resmi sitesinde yer alan liste düzenli olarak güncellenmektedir.
+                            </p>
+                        </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="400">
+                        <i class="bx bx-help-circle icon-help" alt="Efatura entegrasyon programı"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-8" class="collapsed">E-Faturayı nasıl arşivleyeceğim? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-8" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                E-Faturaların çıktısının alınıp saklanması gibi bir yasal zorunluluğunuz bulunmamaktadır. Faturalar tamamen elektronik ortamda arşivlenir. Yine de dileyen kullanıcılar çıktılarını saklayabilir.
+                            </p>
+                        </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="400">
+                        <i class="bx bx-help-circle icon-help" alt="Efatura nasıl iptal edilir"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-9" class="collapsed">
+                            Temel ya da Ticari Fatura Senaryosu Nedir?
+                            <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i>
+                        </a>
+                        <div id="faq-list-9" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                E-fatura sistemine geçtikten sonra, e-fatura ile çalışacağınız müşteri ya da tedarikçilerle temel ya da ticari fatura senaryolarından birini seçmeniz gerekiyor. Ticari Fatura Senaryosu’nda müşterinizin 7 gün içinde kabul ya da ret vermesi gerekir. Eğer vermezse faturayı kabul etmiş sayılır. Temel faturada bu şekilde bir onay süreci bulunmamaktadır.
+                            </p>
+                        </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="400">
+                        <i class="bx bx-help-circle icon-help" alt="Benim fatura ücretsiz efatura hizmeti"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-10" class="collapsed">E-Fatura sistemi ile irsaliye hazırlayabilir miyim? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-10" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                Evet. Bunu yapabilmek için e-faturanın malın teslim edileceği tarihte düzenlenmiş olması gerekir. Gönderdiğiniz e-faturada düzenleme tarihi yanında düzenleme zamanının saat olarak gösterilmesi halinde e-faturanın kâğıt dökümü irsaliye yerine geçer. Fakat bu çıktıya “İrsaliye yerine geçer” ifadesinin yazılması ve kâğıdın kaşelenip imzalanması da gerekir.
+                            </p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </section><!-- End Frequently Asked Questions Section -->
+    <!-- End Contact Section -->
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container">
+
+            <div class="section-title">
+                <!--  <h2>İLETİŞİM</h2>-->
+                <!-- <p>İletişim bilgilerinizi doldurun biz size ulaşalım.</p>
+                -->
+                @model BenimFaturaMVC.Models.Email
+
+                <div class="text-center" style="margin-top:10px; margin-bottom:20px"><h2 style="color: #5C9F24">SİZE ULAŞALIM</h2></div>
+
+            </div>
+            <center>
+                <form method="post" role="form" id="form" class="php-email-form col-lg-10">
+                    <div class="row">
+                        <div class="col-md-6 form-group ">
+                            <input type="text" name="ad" class="form-control" id="ad" style="color:#5786b4;border:2px solid #ced4da;" placeholder="Adınız Soyadınız:" data-rule="minlen:4" data-msg="Lütfen Boş Bırakmayınız." />
+                        </div>
+                        <div class="col-md-6 form-group mt-3 mt-md-0">
+                            <input type="email" class="form-control" name="email" id="email" style="color:#5786b4;border:2px solid #ced4da;" placeholder="E-Mail Adresiniz:" data-rule="email" data-msg="Lütfen Boş Bırakmayınız." />
+                        </div>
+
+                    </div>
+                    <div class="col-md-offset-4 mt-4 col-md-12">
+                        <div class="text-center" style="margin-top: 30px"><button type="button" class="btn btn-success" style="background-color: forestgreen">Gönder</button></div>
+                    </div>
+
+
+
+
+                </form>
+
+            </center>
+            <div class="row contact-info">
+
+
+                <h2 style="margin-top:40px; color: #5C9F24">İLETİŞİM</h2>
+                <!--<p>İletişim bilgilerinizi doldurun biz size ulaşalım.</p>-->
+
+                <div class="col-md-6">
+                    <div class="contact-phone">
+                        <i class="bi bi-phone" alt="Benim fatura iletişim" style="color: #5C9F243"></i>
+                        <h3 style="color: #5C9F24">Telefon Numaramız</h3>
+                        <p><a href="tel:+908506110645" ;=; style="color: black">0 850 611 06 45</a></p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="contact-email">
+                        <i class="bi bi-envelope" alt="Benim fatura bilgi" style="color: #5C9F24"></i>
+                        <h3 style="color: #5C9F24">EMAİL ADRESİMİZ</h3>
+                        <p><a href="mailto:bilgi@benimfatura.com" ;=; style="color: black">bilgi@benimfatura.com</a></p>
+                    </div>
+                </div>
+                <div>
+                    <iframe style="border:0; border-radius:20px; width : 70%; height: 270px;" 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.6607539622664!2d31.170095215410804!3d40.90125597931179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x409d7558c6d29949%3A0x332d4e256b968190!2sBilsoft!5e0!3m2!1str!2str!4v1621845589546!5m2!1str!2str"
+                            frameborder="0" allowfullscreen=allowfullscreen></iframe>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </section><!-- End Contact Section -->
+
+</main><!-- End #main -->
+@section IndexScript{
+    <script>
+        $("form button.btn").on("click", function () {
+
+        let mail = {
+        "ad": $("input#ad").val(),
+        "email": $("input#email").val(),
+        "telefon": $("input#telefon").val(),
+        "konu": $("input#konu").val(),
+        "mesaj": $("textarea#mesaj").val(),
+        };
+
+        toastr.success("Başarıyla mail gönderdiniz.")
+        $.ajax({
+        url: "@Url.Action("index", "Efatura")",
+        type: "post",
+        dataType: "JSON",
+        data: mail,
+        success: function (res) {
+        console.log(res)
+        if (res.IsSuccess) {
+
+        } else { }
+        for (var i = 0; i < 4; i++) {
+        $("form")[i].reset()
+        }
+        },
+        error: function () {
+
+        }
+        });
+
+        return false;
+        })
+    </script>
+}

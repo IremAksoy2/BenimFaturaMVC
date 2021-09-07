@@ -1,0 +1,123 @@
+﻿
+@{
+    ViewBag.Title = "Program_Iletisim";
+    Layout = "~/Views/Shread/_Layout.cshtml";
+}
+
+<section id="contact" class="contact">
+    <div class="container" id="IletisimContainer" style="margin-top: 3em;">
+
+        <div class="text-center"><h2>İLETİŞİM</h2></div>
+        <br>
+        <center>
+            <table class="table" id="table2">
+                <thead>
+                    <tr>
+                        <th scope="col">BENİM FATURA</th>
+                        <th scope="col"></th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Telefon Numarası</th>
+                        <td><a style="color: black" href="tel:+908506110645" <span>:</span> 0850 611 06 45</a></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row" ">E-Mail</th>
+                        <td><a  style="color: black"  href="mailto:bilgi@benimfatura.com" <span>:</span> bilgi@benimfatura.com</a></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">Destek Sistemi</th>
+                        <td><a style="color: black"  href="mailto:bilgi@benimfatura.com"<span>:</span> destek@benimfatura.com</a></td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </center>
+
+
+        <div class="social-links mt-3" style="text-align:center; font-size:50px;color:blue">
+
+
+            <a href="https://www.facebook.com/benimfatura/" class="facebook" target="_blank"><i class="bx bxl-facebook" style="color:#1877f2"></i></a>
+            <a href="https://www.instagram.com/benimfaturacom/" class="instagram" target="_blank"><i class="bx bxl-instagram" style="color:#de4d4c"></i></a>
+            <a href="https://twitter.com/benimfatura" class="twitter" target="_blank"><i class="bx bxl-twitter" style="color:#167ab7"></i></a>
+            @*<a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>*@
+            @*<a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>*@
+
+        </div>
+
+        <div class="section-title">
+            <!--  <h2>İLETİŞİM</h2>-->
+            <!-- <p>İletişim bilgilerinizi doldurun biz size ulaşalım.</p>
+        -->
+            <form method="post" role="form" class="php-email-form">
+                <div class="text-center" style="margin-top:10px; margin-bottom:20px"><h2 style="color: #5C9F24">SİZE ULAŞALIM</h2></div>
+            </form>
+        </div>
+        <center>
+            <form method="post" role="form" class="php-email-form col-lg-9">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 form-group">
+                        <input type="text" name="ad" class="form-control" id="ad" style="color:#5786b4;border:2px solid #ced4da;" placeholder="Adınız Soyadınız:" data-rule="minlen:4" data-msg="Lütfen Boş Bırakmayınız.">
+                    </div>
+                    <div class="col-md-6 col-lg-6 form-group">
+                        <input type="email" class="form-control" name="email" id="email" style="color:#5786b4;border:2px solid #ced4da;" placeholder="E-Mail Adresiniz:" data-rule="email" data-msg="Lütfen Boş Bırakmayınız.">
+                    </div>
+                </div>
+
+                <div class="text-center" style="margin-top:30px"><button type="button" class="btn btn-success" style="background-color: #5C9F24">Gönder</button></div>
+            </form>
+        </center>
+        <div class="row contact-info">
+
+            <div>
+                <iframe style="border:0; border-radius:20px; width : 70%; height: 270px;"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.6607539622664!2d31.170095215410804!3d40.90125597931179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x409d7558c6d29949%3A0x332d4e256b968190!2sBilsoft!5e0!3m2!1str!2str!4v1621845589546!5m2!1str!2str"
+                        frameborder="0" allowfullscreen=allowfullscreen></iframe>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+@section IletisimScript{
+    <script>
+        $("form button.btn").on("click", function () {
+
+            let mail = {
+                "ad": $("input#ad").val(),
+                "email": $("input#email").val(),
+                "telefon": $("input#telefon").val(),
+                "konu": $("input#konu").val(),
+                "mesaj": $("textarea#mesaj").val(),
+            };
+
+            toastr.success("Başarıyla mail gönderdiniz.")
+            $.ajax({
+                url: "@Url.Action("index","Efatura")",
+                type: "post",
+                dataType: "JSON",
+                data: mail,
+                success: function (res) {
+                    console.log(res)
+                    if (res.IsSuccess) {
+
+                    } else { }
+                    for (var i = 0; i < 4; i++) {
+                        $("form")[i].reset()
+                    }
+                },
+                error: function () {
+
+                }
+            });
+
+            return false;
+        })
+    </script>
+}

@@ -1,0 +1,190 @@
+/*................ Kampanya Tablo..................................*/
+
+#kampanya table, th, td {
+	border: 1px;
+	border-radius: 8px;
+	text-align: center;
+	border-color: white;
+}
+
+
+#kampanya table tr{
+
+	margin-top: 500px;
+	border-spacing: 50px;
+
+}
+
+#kampanya table{
+	border-spacing: 5px;
+	border-collapse: separate;
+	width: 90%;
+	margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+    #kampanya table th {
+        font-size: 7px;
+    }
+}
+
+
+
+
+/*................ Kampanya Tablo..................................*/
+
+
+
+/*................ Kampanya Text..................................*/
+#images{
+    margin-top:-95px;
+}
+#baslik table{
+    margin-top:10%;
+
+
+}
+
+.kampanya-title{
+
+text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #2a2c39;
+  margin-top: 2%;
+}
+
+.kampanya-aciklama p {
+	margin-left: 4%;
+	margin-top: 2%;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #2a2c39;
+}
+
+.list{
+margin-left: 3%;
+}
+
+
+#images img{
+	width: 100%;
+    margin-top: 2%;
+}
+
+/*................ Kampanya Text..................................*/
+
+#table1 tr th , td{
+	border-bottom: 1px solid;
+	border-color: white;
+}
+
+
+#table1 thead tr th {
+	
+	color:#5C9F24;
+}
+
+#table1 tbody {
+	border-radius: 50px;
+	
+}
+
+	#table1 tbody tr th  {
+		text-align: left;
+		font-size: large;
+		color: black;
+		border-color: #5C9F24;
+	}
+
+#table1 thead tr th {
+	text-align: left;
+	font-size: large;
+	color: #5C9F24;
+	border-color: #5C9F24;
+}
+
+
+	#table1 tbody tr td {
+
+		border-color: #5C9F24;
+		color: #5786b4;
+	}
+
+		#table1 a {
+		    font-size: large;
+			float:left;
+			font-weight: bold;
+			color: #5786b4;
+		}
+
+#IletisimContainer div {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+#IletisimContainer h2 {
+	color: #5C9F24;
+	font-size: xx-large;
+	font-weight: bold;
+}
+
+
+/*................ Ýletisim Tablo..................................*/
+
+#table2 tr th, td {
+	border-bottom: 1px solid;
+	border-color: white;
+}
+
+
+#table2 thead tr th {
+	color: #5C9F24;
+}
+
+#table2 tbody {
+	border-radius: 50px;
+}
+
+	#table2 tbody tr th {
+		text-align: left;
+		font-size: large;
+		color: black;
+		border-color: #5C9F24;
+	}
+
+#table2 thead tr th {
+	text-align: left;
+	font-size: large;
+	color: #5C9F24;
+	border-color: #5C9F24;
+}
+
+
+#table2 tbody tr td {
+	border-color: #5C9F24;
+	color: #5786b4;
+}
+
+#table2 a {
+	font-size: large;
+	float: left;
+	font-weight: bold;
+	color: #5786b4;
+}
+
+@media only screen and (max-width: 940px) {
+	#IletisimContainer table {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 940px) {
+	#IletisimContainer table {
+		width: 840px;
+	}
+}
